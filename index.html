@@ -16,34 +16,36 @@
             <a href="#"><div class="nav-items"><p>Aim</p></div></a>
             <a href="#"><div class="nav-items"><p>About Us</p></div></a>
             <a href="#"><div class="nav-items blog"><p>Blog</p></div></a>
-            <a href="#"><div class="nav-items login"><p>Login/Sign up</p></div></a>
+            <a href="#" id="login-button"><div class="nav-items login-li"><p>Login/Sign up</p></div></a>
         </div>
     </nav>
-    <section class="login login-page">
+    <section id="login" class="login-page on">
         <div class="nav">
-            <button><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg></button>
+            <button id="login-back-btn"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg></button>
             <h1>Login Page</h1>
         </div>
         <div class="main">
             <div class="input-box">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                 <input type="text" name="emal" placeholder="Email or username">
             </div>
             <div class="input-box">
-                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M4 38v-3.05h40V38Zm1.9-12.7-2-1.1 2-3.4H2v-2.25h3.9l-2-3.4 2-1.1 1.9 3.35 1.9-3.35 2 1.1-2 3.4h3.9v2.25H9.7l2 3.4-2 1.1-1.9-3.35Zm16.2 0-2-1.2 2-3.4h-3.9v-2.25h3.9l-2-3.4 2-1.1L24 17.3l1.9-3.35 2 1.1-2 3.4h3.9v2.25h-3.9l2 3.4-2 1.2-1.9-3.35Zm16.2 0-2-1.2 2-3.4h-3.9v-2.25h3.9l-2-3.4 2-1.1 1.9 3.35 1.9-3.35 2 1.1-2 3.4H46v2.25h-3.9l2 3.4-2 1.2-1.9-3.35Z"/></svg>
-                <input type="text" name="emal" placeholder="Email or username">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zm40-176c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z"/></svg>
+                <input type="text" name="emal" placeholder="Password">
             </div>
-            <p>Forgot password?</p>
+            <p id="forgot-p">Forgot password?</p>
             <button class="cont">Continue</button>
             <button class="google">Login With Google</button>
             <p>Don't have an account? <a href="#">Sign up</a></p>
         </div>
     </section>
     <section class="signup login-page">
-
+        
     </section>
     <main>
         <section id="home">
+            <div id="ball-bg">
+            </div>
             <div class="parts home-title">
                 <img src="./assets/title_card.png" width="500px" alt="">
                 <h2>Transforming the post harvest space through data driven, intelligent <br> decision making technology</h2>
@@ -52,23 +54,24 @@
                 <img src="./assets/warehouse.png" alt="">
             </div>
         </section>
-
+        
         <section id="about">
-            <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo laboriosam nulla consectetur velit veniam, beatae temporibus facilis officia, numquam pariatur veritatis laudantium? Vitae, quia animi repellendus adipisci hic ipsam harum.
-            Hic ipsum voluptatem animi culpa soluta, deleniti est esse, earum quam ducimus facilis deserunt, debitis architecto totam ex omnis tempore facere nam pariatur nobis illum iusto! Debitis omnis veritatis in?
-            Cumque error voluptatibus commodi at, beatae sed fugit incidunt quod exercitationem labore esse, fugiat distinctio id. Atque explicabo ab iusto quae, libero dicta voluptatibus, aliquam amet iure accusamus expedita nam.
-            Sunt omnis numquam illo reiciendis molestias? Facilis totam, dolorum natus error aperiam eum fugit amet, beatae odit eligendi iusto excepturi adipisci! Consectetur dolores ipsa maxime, voluptatem pariatur tempore blanditiis accusantium.
-            Fugiat iure, officia dignissimos porro voluptatibus magnam odio facilis ipsa numquam provident! Deleniti amet repellat ipsam quisquam! Quos impedit voluptas sit dolorem, quaerat, corrupti laborum nobis tenetur nisi obcaecati officiis.
-            Laudantium commodi ipsam enim beatae sequi alias dolores, eius sed adipisci omnis consequatur quos, quas minus obcaecati unde ea facilis cupiditate inventore, vel nulla provident similique distinctio neque. Animi, magni!
-            Quaerat fugit asperiores a. Fugit, rerum aliquid. Reiciendis autem nesciunt dolor, facilis exercitationem sunt. Laboriosam porro, id nobis maiores, laborum modi dolorem veritatis doloribus, voluptatibus voluptate maxime inventore illo sapiente.
-            Repudiandae inventore nemo ad quia quae a adipisci, aut rem sequi, maiores numquam, ullam ut ab aperiam ea dolore quam blanditiis magni esse laborum architecto id facere. Magni, blanditiis soluta.
-            Voluptatum obcaecati, dolorum nostrum suscipit quasi aliquam et eos earum voluptate eum sapiente velit cumque molestias autem nobis ducimus fuga harum laudantium similique voluptatem illum nulla consequuntur! Tenetur, corporis expedita?
-            Quasi, quibusdam? Aliquam autem velit dolore sint voluptatum, enim iure sed soluta cum error quia veritatis dolorum, pariatur esse minus nam, maiores magni eos consectetur cupiditate! Eum sapiente laboriosam obcaecati.</h1>
+            <h1>About</h1>
+            <p>Skyware envisions a future with zero post harvest storage losses. <br> 
+            Currently 1 Billion MT of food is wasted annually during the processing stage. <br>
+            Skyware holds the virtue to turn the tables around this problem with its high
+               -tech IoT and AI-based scientific storage solutions. <br> Built with 
+               the help of modern technology our products can mitigate the 
+               inefficiencies during warehouse management <br> and turn the 
+               storage unit into a modern high-tech facility with added benefits 
+               to the customer. <br> The likes of our storage solutions don’t exist
+                in the Indian Markets.
+               </p>
         </section>
         <section></section>
         <section></section>
     </main>
     
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

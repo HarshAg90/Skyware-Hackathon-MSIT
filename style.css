@@ -26,7 +26,8 @@ nav{
     height: 8vh;
     position: fixed;
     /* border-bottom: 1px solid black; */
-    display: flex;
+    display:flex;
+    z-index: 1;
     width: 100%;
     justify-content: space-between;
     padding-left: 20px;
@@ -39,16 +40,18 @@ nav{
 }
 .nav-sub .blog:hover{
     background-color:#F9D30C;
-    color: white;
 }
-.nav-sub .login{
+.nav-sub .login-li{
     border: 2px solid #4154FA;
     border-radius: 10px;
 }
-.nav-sub .login:hover{
+.nav-sub .login-li:hover{
     background-color: #4154FA;
+}
+#login-button:hover p, .blog:hover p{
     color: white;
 }
+
 .nav-sub{
     display: flex;
     align-items: center;
@@ -97,7 +100,20 @@ nav a{
     height: 900px;
 }
 
-/* login signup page */
+#ball-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-20%,-20%);
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    background: linear-gradient(93.63deg, #56CAB4 -38.15%, rgba(86, 202, 180, 0) 97.27%);
+}
+
+
+/* -------- login signup page */
+
 
 .login-page{
     color: black;
@@ -106,17 +122,17 @@ nav a{
     left:100%;
     z-index: 5;
     height: 100vh;
-    width: 700px;
+    width: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: rgba(223, 223, 223, 0.589);
+    background: rgba(223, 223, 223, 0.9);
 }
-.login div, input,button,h1,p{
+#login div, input,button,h1,p{
     z-index: 6;
 }
-.login .nav{
+#login .nav{
     position: fixed;
     top: 0%;
     width: inherit;
@@ -140,11 +156,32 @@ nav a{
     background-color: rgb(184, 184, 184);
     border-radius: 50%;
 }
-.login .nav button svg{
+
+#login .nav button svg{
     fill: black;
 }
-.login h1,p,input{
-    color: black;
+#login .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#login h1,#login p, #login .input-box,#login button{
+    margin: 10px;
+}
+#forgot-p{
+    margin-top: none;
+    margin-bottom: 30px;
+    text-align: end;
+    width: 100%;
+}
+#login .main button{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 20px;
 }
 .input-box{
     border: 2px solid black;
@@ -154,7 +191,8 @@ nav a{
     margin: 30px;
 }
 .input-box svg{
-    fill: green;
+    fill: #00cb4e;
+    width: 40px;
     margin: 10px;
 }
 .input-box input:focus{
@@ -168,7 +206,28 @@ nav a{
     font-size: 1.5rem;
 }
 
-
+.on{
+    display: none;
+    transition: 3ms ease-in-out;
+}
 .signup{
     display: none;
+}
+
+
+/* ----- about page */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#about h1{
+    font-size: 3rem;
+}
+#about p{
+    text-align: center;
+    font-size: 1.5rem;
 }
