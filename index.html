@@ -8,68 +8,287 @@
     <title>Skyware</title>
 </head>
 <body>
+
     <nav>
-        <a href="#"><div class="icon">
-            <img src="./assets/logo.png" alt="">
+
+        <a href="#"><div class="hidden icon">
+            <img src="./assets/title_card.png" alt="">
         </div></a>
+
         <div class="nav-sub">
-            <a href="#"><div class="nav-items"><p>Aim</p></div></a>
-            <a href="#"><div class="nav-items"><p>About Us</p></div></a>
-            <a href="#"><div class="nav-items blog"><p>Blog</p></div></a>
-            <a href="#" id="login-button"><div class="nav-items login-li"><p>Login/Sign up</p></div></a>
+            <a href="#solutions"><div class="hidden nav-items"><p>Solution</p></div></a>
+            <a href="#career"><div class="hidden nav-items"><p>Career</p></div></a>
+            <a href="#about"><div class="hidden nav-items"><p>About us</p></div></a>
+            <a href="#testimonials"><div class="hidden nav-items"><p>Team</p></div></a>
+            <a href="#ContactUs"><div class="hidden nav-items"><p>Contact Us</p></div></a>
+            <a href="#"><div class="hidden nav-items blog"><p>Blog</p></div></a>
+            <a href="#" id="login-button"><div class="hidden nav-items login-li"><p>Login/Sign up</p></div></a>
         </div>
+
     </nav>
-    <section id="login" class="login-page on">
+
+    <section id="login" class="login-page">
         <div class="nav">
-            <button id="login-back-btn"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg></button>
-            <h1>Login Page</h1>
+            <h1>Log-In</h1>
+            <button id="login-back-btn">&times;</button>
         </div>
+        
+        <div class="main">
+            <div class="input-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                <input type="text" name="emal" placeholder="Email or username">
+            </div>
+
+            <div class="input-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zm40-176c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z"/></svg>
+                <input type="text" name="emal" placeholder="Password">
+            </div>
+            
+            <p id="forgot-p">Forgot password?</p>
+            <button class="cont">Continue</button>
+            <button class="google"><img src="assets/gooogle logo.png" alt=""><div class="">Login With Google</div> </button>
+            <p>Don't have an account? <a href="#" id="signup-btn">Sign up</a></p>
+        </div>
+    </section>
+    <section id="signup" class="signup login-page">
+        <div class="nav">
+            <h1>Sign up</h1>
+            <button id="signup-back-btn">&times;</button>
+        </div>
+        
         <div class="main">
             <div class="input-box">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                 <input type="text" name="emal" placeholder="Email or username">
             </div>
             <div class="input-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                <input type="text" name="emal" placeholder="Email or username">
+            </div>
+    
+            <div class="input-box">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zm40-176c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z"/></svg>
                 <input type="text" name="emal" placeholder="Password">
             </div>
-            <p id="forgot-p">Forgot password?</p>
+            <p id="tnc"><input type="checkbox" name="tnc" id="">i agree with all <a href="#">Terms and services</a> & privacy policy</p>
+
             <button class="cont">Continue</button>
-            <button class="google">Login With Google</button>
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <p>Already have an account? <a href="#" id="login-btn">login</a></p>
         </div>
-    </section>
-    <section class="signup login-page">
-        
     </section>
     <main>
         <section id="home">
-            <div id="ball-bg">
+            <div id="ball-bg" class="hidden">
             </div>
-            <div class="parts home-title">
+            <div class="parts home-title hidden">
                 <img src="./assets/title_card.png" width="500px" alt="">
-                <h2>Transforming the post harvest space through data driven, intelligent <br> decision making technology</h2>
+                <h2>Transforming the post harvest space through data driven, <br> intelligent decision making technology</h2>
             </div>
-            <div class="parts home-b-img">
+            <div class="parts home-b-img hidden">
                 <img src="./assets/warehouse.png" alt="">
             </div>
+            <section id="sponsors"><img src="./assets/sponser brands.png" alt=""></section>
         </section>
         
-        <section id="about">
-            <h1>About</h1>
+        <h1 class="heading hidden">About</h1>
+        <section id="about" class="hidden">
+            <img src="./assets/aboutPic.png" alt="">
             <p>Skyware envisions a future with zero post harvest storage losses. <br> 
             Currently 1 Billion MT of food is wasted annually during the processing stage. <br>
             Skyware holds the virtue to turn the tables around this problem with its high
-               -tech IoT and AI-based scientific storage solutions. <br> Built with 
-               the help of modern technology our products can mitigate the 
-               inefficiencies during warehouse management <br> and turn the 
-               storage unit into a modern high-tech facility with added benefits 
-               to the customer. <br> The likes of our storage solutions don’t exist
-                in the Indian Markets.
-               </p>
+            -tech IoT and AI-based scientific storage solutions. <br> Built with 
+            the help of modern technology our products can mitigate the 
+            inefficiencies during warehouse management <br> and turn the 
+            storage unit into a modern high-tech facility with added benefits 
+            to the customer. <br> The likes of our storage solutions don’t exist
+            in the Indian Markets.
+            </p>
         </section>
-        <section></section>
-        <section></section>
+        <section id="career" class="hidden">
+            <p class="hidden">Post-harvestlosses accountfor about 40% oftotalfood production
+                due to unscientific storage,insects,rodents, micro–organisms, etc.
+                
+                In India, annual storage losses have been estimated atnearly 100-million tonnes worth Rs. 93,000 crores in which Rs. 11,000
+                crores has been forrice &wheat.
+                
+                Out of 1,000 lakh MT ofwheat producedevery year, around 10-25%
+                is lostdue to improper storage methods
+                </p>
+                <img src="./assets/about-2.png" alt="">
+        </section>
+        <div class="space"></div>
+        <section id="products">
+            <div class="images hidden">
+                <div class="">
+                    <img src="./assets/product 1.png" alt="">
+                    <img src="./assets/product 2.png" alt="">
+                </div>
+                <div class="">
+                    <img src="./assets/product 3.png" alt="">
+                </div>
+            </div>
+            <div class="text hidden">
+                <h1 class="heading">Our Products</h1>
+                <p>The working of our SAAS based products are simple yet 
+                    <br> revolutionary. Our devices equipped with various sensors, 
+                    <br>placed in the storage unit will be responsible for 
+                    <br>monitoring the climatic condition for the commodities in 
+                    <br>the warehouse and defining the health parameters for it 
+                    <br>accordingly. Real-time analysis of the light, moisture,
+                    <br> temperature, gaseous activities, insects, microbial 
+                    <br>activities, etc, shall be carried out at all times by the
+                    <br> devices. They come with remote accessibility that can be
+                    <br> used with the help of our software on smartphones and
+                    <br> computers connected to the internet.
+                </p>
+            </div>
+        </section>
+        <div class="space"></div>
+        <h1 class="heading">Supported By</h1>
+        <section id="supported-by">
+            <div class="card">
+                <img src="./assets/sumpot1.png" alt="">
+                <p>We are supported by Nexus; a
+                    <br>collaboration between the 
+                    <br>American Embassy, New Delhi and 
+                    <br>ACIR to showcase the best of 
+                    <br>American and Indian 
+                    <br>Entrepreneurship,
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot2.png" alt="">
+                <p>Under the aegis of Ministry of IT 
+                    <br>and Electronics, Electropreneur 
+                    <br>Park contributes to the ESDM 
+                    <br>growth of India. Skyware is one of 
+                    <br>its incubatees.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot3.png" alt="">
+                <p>Skyward is backed by IIM Calcutta 
+                    <br>Innovation Park an NPO 
+                    <br>established under the aegis of IIM 
+                    <br>Calcutta to promote 
+                    <br>Entrepreneurship and Innovation.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot4.png" alt="">
+                <p>Skyward is backed by IIM Calcutta 
+                    <br>Innovation Park an NPO 
+                    <br>established under the aegis of IIM 
+                    <br>Calcutta to promote 
+                    <br>Entrepreneurship and Innovation.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot5.png" alt="">
+                <p>Skyward is backed by IIM Calcutta 
+                    <br>Innovation Park an NPO 
+                    <br>established under the aegis of IIM 
+                    <br>Calcutta to promote 
+                    <br>Entrepreneurship and Innovation.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot6.png" alt="">
+                <p>Skyward is backed by IIM Calcutta 
+                    <br>Innovation Park an NPO 
+                    <br>established under the aegis of IIM 
+                    <br>Calcutta to promote 
+                    <br>Entrepreneurship and Innovation.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/sumpot7.png" alt="">
+                <p>Skyward is backed by IIM Calcutta 
+                    <br>Innovation Park an NPO 
+                    <br>established under the aegis of IIM 
+                    <br>Calcutta to promote 
+                    <br>Entrepreneurship and Innovation.
+                </p>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="solutions" class="hidden">
+            <h1 class="heading">Solutions</h1>
+            <div>
+                <img src="./assets/solutions.png" alt="">
+                <p>Detecting spoilage using the real-time data modeling
+                    <br>Early stage pest, insect, fungi attack
+                    <br><br>
+                    <br>Calculating the shelflife of commodities
+                    <br>Alerts the authority beforehand
+                    <br>Assists in inventory management
+                    <br>
+                    <br>Suggestive maintenance activities
+                    <br>AI backed virtual assistant
+                    <br>Remote support
+                    <br>Scientific storage techniques
+                    <br>Timely alertthe authority
+                    <br>Health score for quality analysis
+                    <br>
+                    <br>Blockchain based Inventory management
+                    
+                    </p>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="testimonials" class="hidden">
+            <div class="test1">
+                <img src="./assets/tertimonial 1.png" alt="">
+                <p>“India has changed its mindset to move from incremental changes 
+                    <br>to transformational changes. The Central Warehousing Corporation 
+                    <br>and Food Corporation of India are working on modern crop storage 
+                    <br>plans for the benefit of farmers.”
+                </p>
+            </div>
+            <div class="test2">
+                <p>The Centre has developed an online portal to collect details 
+                    <br>about private and government warehouses, a move that will 
+                    <br>enable the monitoring of storage availability on a real time 
+                    <br>basis, a senior Food Ministry Official said on 29th Jun 2021.
+                </p>
+                <img src="./assets/testimonial 2.png" alt="">
+            </div>
+        </section>
+        <section id="ContactUs">
+            <div class="lets-talk">
+                <h1>Let's Talk @</h1>
+                <div class="co-div">
+
+                    <p>info@skyware.in</p>
+                </div>
+                <div class="co-div">
+
+                    <p>Electropreneur Park, New Delhi</p>
+                </div>
+                <p></p>
+            </div>
+            <div class="providing">
+                <h1>Providing IOT and AI Solutions</h1>
+                <div class="div">
+                    <div class="">
+                        <img src="./assets/logo.png" alt="">
+                        <p>Copyright &copy; @harshag90</p>
+                        <p>All Rights Reserved</p>
+                    </div>
+                    <div class="">
+                        <h1>FOLLOW US</h1>
+                        <div class="co-div">
+    
+                            <p>Twitter</p>
+                        </div>
+                        <div class="co-div">
+    
+                            <p>LinkedIn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <script src="./script.js"></script>
