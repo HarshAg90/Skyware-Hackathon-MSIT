@@ -483,7 +483,6 @@ p {
 #supported-by{
     display: flex;
     overflow-x: scroll;
-    background-color: rgba(203, 203, 203, 0.688);
 }
 #supported-by::-webkit-scrollbar{
     width: 0.25rem;
@@ -492,12 +491,12 @@ p {
     background: transparent;
 }
 #supported-by::-webkit-scrollbar-thumb{
-    background: rgb(156, 156, 156);
+    background: #489789;
     border-radius: 20px;
 }
 
 #supported-by .card{
-    background-color: #56cab4;
+    background-color: #8DD2C59C;
     border-radius: 20px;
     min-width: fit-content;
     overflow: hidden;
@@ -517,7 +516,8 @@ p {
 }
 #solutions{
     overflow: hidden;
-    background: #57cbb672;
+    background:#C3C4DE87;
+    ;
 }
 #solutions div{
     display: flex;
@@ -568,6 +568,7 @@ transition: 500ms ease;
 }
 #testimonials div p{
     margin: 30px;
+    font-weight: 700;
 }
 .test2{
     margin-left: 50vw !important;
@@ -579,14 +580,21 @@ transition: 500ms ease;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #56cab460;
+    background: linear-gradient(268.1deg, rgba(62, 137, 123, 0.61) 0.91%, rgba(53, 193, 167, 0.438418) 40.66%, rgba(143, 206, 194, 0.196946) 96.59%, rgba(217, 217, 217, 0) 142.22%);
+    ;
 }
 #ContactUs img{
     height: 60px;
 }
-.providing .div{
-    display: flex;
+.div.imp h2, .imp a {
+  margin: 20px;
 }
-.providing .div div{
-    margin: 20px;
+.div .co-div svg{
+    height: 30px;
+    margin: 10px;
+}
+.div .co-div{
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
